@@ -1,0 +1,29 @@
+.radio_custom
+{
+	position: relative;
+}
+
+input
+{
+	display: none;
+}
+
+.radio_custom:before
+{
+	content:"";
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	display: inline-block;
+	cursor: pointer;
+	outline: none;
+	margin:0 20px;
+	background-color: red;
+	vertical-align: top;
+	color:#fff;
+}
+
+input:checked + .radio_custom:before
+{
+	content:"\2713";
+}
